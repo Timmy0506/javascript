@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Pacman</title>
+    </header>
+<head>
+ 
+    <script src="game.js"></script>
+    <script src="pacman.js"></script>
+    <script src="ghost.js"></script>
+    <script src="level.js"></script>
+    <link type="stylesheet" href="pacman.css">
+
+
+    
+    
+    <style media="screen">
+        .box{
+            box-sizing: border-box;
+            width: 1280px;
+            height: 720px;
+            
+            border: 2px solid black;
+            padding:5px;
+
+
+        }
+    
+    
+    </style>
+ 
+</head>
+<body>
+
+
+
+   
+    
+  <div class="box">
+    <img id="man" src="img/pacman2.gif" style="position:absolute; left:8px; top:8px; z-index:2;"  height="50">
+    <img id="ghost" src="img/1066022.png" style="position:absolute; left: 50%; top:50%; z-index: 2;"  height="50">
+    
+
+  </div>
+                                 
+  
+
+  
+
+  
+  
+  
+  
+
+</body >
+
+<script type="text/javascript">
+    const box = document.querySelector("div.box");
+    const rect = box.getBoundingClientRect();
+ console.log(rect);
+
+
+
+</script>
+</html>
